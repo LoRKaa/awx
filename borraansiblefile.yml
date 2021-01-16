@@ -1,8 +1,0 @@
----
-- hosts : all
-  tasks:
-    - name: Borrando archivo
-      file:
-        state: absent
-        path: /home/ansible/id.txt
-...
