@@ -1,7 +1,0 @@
----
-- hosts : all
-  tasks:
-    - name: Simple SHELL COMMAND
-      shell:
-        cmd: uname -a
-...
