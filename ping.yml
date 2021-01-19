@@ -1,6 +1,6 @@
 ---
-- name : Ping
 - hosts: all
+  vars:
   gather_facts: false
   tasks:
     - ping:
