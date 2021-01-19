@@ -10,5 +10,6 @@
           - net-tools
           - dnsutils
           - apache2
+          - debsecan
         install_recommends: yes
 ...
