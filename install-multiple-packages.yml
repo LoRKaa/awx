@@ -1,0 +1,14 @@
+---
+- hosts : all
+  tasks:
+    - name: Instalar Paquetes
+      apt: 
+        name:
+          - figlet
+          - nmap
+          - apache2
+          - net-tools
+          - dnsutils
+          - apache2
+        install_recommends: yes
+...

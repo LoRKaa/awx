@@ -1,0 +1,8 @@
+---
+- hosts : all
+  tasks:
+    - name: Borrando archivo
+      file:
+        state: absent
+        path: /root/id.txt
+...

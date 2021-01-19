@@ -1,0 +1,20 @@
+---
+- hosts : all
+  tasks:
+    - name: Instalar Figlet
+      apt: name=figlet install_recommends=yes
+    - name: Instalar Nmap
+      apt: name=nmap install_recommends=yes
+    - name: Instalar net-tools
+      apt: name=nmap install_recommends=yes
+    - name: Instalar dnsutils
+      apt: name=nmap install_recommends=yes
+    - name: Instalar sudo
+      apt: name=sudo install_recommends=yes
+    - name: Instalar Apache2
+      apt: name=apache2 install_recommends=yes
+    - name: Creando index.html
+      copy:
+        content: "Ansible Managed Host, Welcome."
+        dest: /var/www/html/index.html
+...
